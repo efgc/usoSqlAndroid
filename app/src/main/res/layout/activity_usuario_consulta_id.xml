@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formularios.usuario.ActivityUsuarioConsultaId">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="84dp"
+        android:text="CONSULTA USUARIOS"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usuarioConsultaIdTxtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="id"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/usuarioConsultaIdBtnBuscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/usuarioConsultaIdBtnBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClick"
+        android:text="Buscar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/usuarioConsultaIdTxtId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usuarioConsultaIdTxtId" />
+
+    <EditText
+        android:id="@+id/usuarioConsultaIdTxtNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="9dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioConsultaIdTxtId" />
+
+    <EditText
+        android:id="@+id/usuarioConsultaIdTxtTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="9dp"
+        android:ems="10"
+        android:hint="telefono"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioConsultaIdTxtNombre" />
+
+
+    <Button
+        android:id="@+id/usuarioConsultaIdBtnActualizar"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="18dp"
+        android:onClick="onClick"
+        android:text="Actualizar"
+        app:layout_constraintEnd_toStartOf="@+id/usuarioConsultaIdBtnEliminar"
+        app:layout_constraintTop_toBottomOf="@+id/usuarioConsultaIdTxtTelefono" />
+
+    <Button
+        android:id="@+id/usuarioConsultaIdBtnEliminar"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="onClick"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/usuarioConsultaIdTxtTelefono" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
