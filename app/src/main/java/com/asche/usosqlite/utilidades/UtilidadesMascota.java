@@ -24,13 +24,12 @@ public class UtilidadesMascota {
 
     public static final String getSqlInsertar(Mascota mascota) {
         String respuesta = "INSERT INTO " + TABLA_MASCOTA
-                + "(" + CAMPO_ID_MASCOTA + ", "
-                + CAMPO_ID_USUARIO + ", "
+                + "(" + CAMPO_ID_USUARIO + ", "
                 + CAMPO_ID_RAZA + ", "
                 + CAMPO_NOMBRE_MASCOTA + ")"
                 + " VALUES("
-                + mascota.getIdMascota()
-                + ", " + mascota.getIdUsuario()
+                + mascota.getIdUsuario()
+                + ", " + mascota.getIdRaza()
                 + ", '" + mascota.getNombreMascota() + "')";
 
         return respuesta;
@@ -39,6 +38,14 @@ public class UtilidadesMascota {
     public static final String getSqlBuscarId() {
         String respuesta = "SELECT * FROM " + TABLA_MASCOTA
                 + " WHERE " + CAMPO_ID_MASCOTA + " = ?";
+
+        return respuesta;
+    }
+
+    public static final String getSqlBuscarTodos() {
+        String respuesta = "SELECT " + CAMPO_ID_MASCOTA + ", "
+                + CAMPO_ID_RAZA + ", " + CAMPO_ID_USUARIO + ", " + CAMPO_NOMBRE_MASCOTA
+                + " FROM " + TABLA_MASCOTA;
 
         return respuesta;
     }

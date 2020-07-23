@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.asche.usosqlite.R;
+import com.asche.usosqlite.formularios.mascota.ActivityMascotaPrincipal;
 import com.asche.usosqlite.formularios.raza.ActivityRazaPrincipal;
 import com.asche.usosqlite.formularios.usuario.ActivityUsuarioPrincipal;
 
@@ -42,10 +43,10 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(myIntent);
                 break;
 
-//            case R.id.principalBtnMascota:
-//                myIntent = new Intent(getApplicationContext(),PrincipalMascota.class);
-//                startActivity(myIntent);
-//                break;
+            case R.id.principalBtnMascota:
+                myIntent = new Intent(getApplicationContext(), ActivityMascotaPrincipal.class);
+                startActivity(myIntent);
+                break;
         }
     }
 }
