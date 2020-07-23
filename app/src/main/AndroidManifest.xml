@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".formularios.mascota.ActivityMascotaDetalle"></activity>
+        <activity android:name=".formularios.mascota.ActivityMascotaConsultaCombo"></activity>
+        <activity android:name=".formularios.mascota.ActivityMascotaDetalle" />
         <activity android:name=".formularios.mascota.ActivityMascotaConsultaLista" />
         <activity android:name=".formularios.mascota.ActivityMascotaRegistro" />
         <activity android:name=".formularios.raza.ActivityConsultaRaza" />
