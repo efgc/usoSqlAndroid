@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".formularios.raza.ActivityRazaConsultaCombo"></activity>
+        <activity android:name=".formularios.raza.ActivityConsultaRaza"></activity>
+        <activity android:name=".formularios.raza.ActivityRazaConsultaCombo" />
         <activity android:name=".formularios.raza.ActivityRazaConsultaLista" />
         <activity android:name=".formularios.raza.ActivityRazaRegistro" />
         <activity android:name=".formularios.raza.ActivityRazaPrincipal" />

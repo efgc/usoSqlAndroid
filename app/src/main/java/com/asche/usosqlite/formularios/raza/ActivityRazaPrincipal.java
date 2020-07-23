@@ -35,6 +35,11 @@ public class ActivityRazaPrincipal extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
+            case R.id.razaPrincipalBtnConsultarId:
+                intent = new Intent(getApplicationContext(), ActivityConsultaRaza.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }
