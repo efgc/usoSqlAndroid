@@ -53,7 +53,7 @@ public class UtilidadesMascota {
     public static final String getSqlActualizar() {
         String respuesta = "UPDATE " + TABLA_MASCOTA
                 + " SET " + CAMPO_ID_USUARIO + " = ?, "
-                + CAMPO_ID_RAZA + " = ? "
+                + CAMPO_ID_RAZA + " = ?, "
                 + CAMPO_NOMBRE_MASCOTA + " = ? "
                 + " WHERE " + CAMPO_ID_MASCOTA + " = ?";
 

@@ -34,6 +34,11 @@ public class ActivityMascotaPrincipal extends AppCompatActivity {
                 myIntent = new Intent(getApplicationContext(), ActivityMascotaConsultaCombo.class);
                 startActivity(myIntent);
                 break;
+
+            case R.id.mascotaPrincipalBtnConsultar:
+                myIntent = new Intent(getApplicationContext(), ActivityMascotaConsultaMascota.class);
+                startActivity(myIntent);
+                break;
         }
     }
 }
